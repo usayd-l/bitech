@@ -1,0 +1,95 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.app-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.app-content {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+#joy-app {
+    position: relative;
+}
+
+#joy-background {
+    background: url('vms.png') center/cover no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5; /* Adjust the opacity for the dark background image */
+}
+
+#joy-content {
+    background: linear-gradient(90deg, rgba(255, 113, 0, 1) 0%, rgba(255, 54, 59, 1) 67%, rgba(255, 0, 114, 1) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply; /* Blend the gradient with the background image */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#vms-app {
+    background: #e67e22 url('vms_placeholder.jpg') center/cover no-repeat;
+    position: relative;
+}
+
+#vms-content {
+    background: #e67e22;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.app-button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.app-button:hover {
+    background-color: #ddd; /* Change to your desired hover color */
+    transform: scale(1.1); /* Add a subtle scaling effect on hover */
+}

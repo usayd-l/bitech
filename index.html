@@ -1,0 +1,30 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitech Apps</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main Screen -->
+    <div class="app-container" id="main-app" style="opacity: 1;" onclick="loadApp(app)">
+        <div class="app-content" id="main-content">
+            <h2>Choose an App to Explore</h2>
+            <button class="app-button explore-button" onclick="loadApp('joy')">Explore Joy App</button>
+            <button class="app-button explore-button" onclick="loadApp('vms')">Explore VMS App</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to load Joy or VMS screen
+        function loadApp(app) {
+            document.getElementById('main-app').style.opacity = '0';
+            setTimeout(() => {
+                window.location.href = app + '.html';
+            }, 500);
+        }
+    </script>
+</body>
+</html>
